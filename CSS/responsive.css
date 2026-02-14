@@ -1,0 +1,45 @@
+/* =========================
+   Tablet View
+========================= */
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .stats-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* =========================
+   Mobile View
+========================= */
+@media (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 100%;
+    }
+}
